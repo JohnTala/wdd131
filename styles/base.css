@@ -1,0 +1,109 @@
+
+
+:root{
+    --bakground-color:darkblue;
+    --text-color:white;
+    --text-centered:center;
+    --unit-rem:1rem;
+}
+
+body{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+
+header{
+    background-color:var(--bakground-color);
+    color:var(--text-color);
+    padding: 16px;
+    text-align: var(--text-centered);
+}
+
+
+h1{
+    color:var(--text-color);
+    font-weight: 200;
+    text-align: center;
+}
+
+nav {
+	background-color: #36454f;
+	margin: 0 auto;
+	max-width: 800px;
+}
+nav ul {
+	list-style-type: none;
+}
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: overline;
+}
+
+.active {
+	color: yellow;
+}
+
+
+p{
+    margin: var(--unit-rem);
+}
+
+main{
+    max-width: 840px;
+}
+
+main img{
+    width: 150px;
+    height: auto;
+    border:1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    float: right;
+    margin: 0 0 var(--unit-rem) var(--unit-rem);
+}
+
+main{
+    display :grid;
+    grid-template-columns: 4fr 2fr;
+    gap: 5px;
+    background-color: #a0d0f7;
+    padding: 5px;
+    margin:5px auto;
+    
+}
+
+main > .card{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    
+}
+.card h2{
+    text-align: center;
+    
+}
+footer{
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: var(--text-centered);
+}
+
+
+/* larger/wider views **************************/
+@media (min-width: 640px) {
+	nav ul {
+		display: flex;
+	}
+
+	nav ul li {
+		flex: 1 1 100%; /* flex: [flex-grow] [flex-shrink] [flex-basis]; 
+		in this example, the items will not shrink but can grow to fill the space at natural content width*/
+
+}
+}
