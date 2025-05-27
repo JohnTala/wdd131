@@ -28,10 +28,7 @@ body{
       height: 100vh; /* Ensures full viewport height */
       margin: 0;
 }
-/* main { 
-  max-width: 800px;
-  margin: 0 auto;
-} */
+
 html, body {
   height: 100%;
   margin: 0;
@@ -57,7 +54,10 @@ header,footer{
    
 }
   
-
+.weather-icon {
+  width: auto;
+  height: 40px; /* optional size limit */
+}
 
 main picture img {
   display: block;
@@ -94,16 +94,13 @@ main picture img {
   gap: 0.5rem;
 }
 
-/* .weather-icon::after {
-  content: "\26C5"; /* Unicode for ⛅ 
-  margin-left: 0.5rem;
-} */
+
 
 .label {
   font-weight: bold;
 }
 
-footer span{
+footer  span{
     font-size: larger;
 } 
 

@@ -8,21 +8,20 @@
       name="description"
       content="Saidi Talatala| BYU-Idaho WDD1|Temple homepage"
     />
-    <meta name="author" content="Saidi Talatala" />
+  <meta name="author" content="Saidi Talatala" />
   <title>South Africa</title>
   <link rel="stylesheet" href="styles/place.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Lato:wght@100;400;900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Lato:wght@100;400;900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <script src="scripts/place.js" defer></script>
 </head>
 <body>
   <header>
-   <h1>South Africa</h1> 
-</header>
+    <h1>South Africa</h1> 
+  </header>
 
   <main>
-
     <div class="content">
       <section class="card">
         <h2>Data</h2>
@@ -37,18 +36,12 @@
       </section>
 
       <section class="card">
-       <h2>
+        <h2>
           Weather
-          <!-- <img 
-            class="weather-icon"
-            src="../images/weather-icon.png"
-            srcset="../images/weather-icon-small.png 1x, ../images/weather-icon-large.png 2x"
-            alt="Weather icon"
-          /> -->
           <picture>
-          <source media="(min-width:650px)" srcset="images/weather-icon-large.png">
-          <source media="(min-width:465px)" srcset="images/weather-icon-small.png">
-          <img src="images/weather-icon.png"  alt="Weather icon" style="width:auto;">
+            <source media="(min-width:650px)" srcset="images/weather-icon-large.png">
+            <source media="(min-width:465px)" srcset="images/weather-icon-small.png">
+            <img src="images/weather-icon.png" alt="Weather icon" class="weather-icon">
           </picture>
         </h2>
         <p><span class="label">Temperature:</span> <span id="temp"></span></p>
@@ -60,7 +53,7 @@
   </main>
 
   <footer>
-    <p>&copy; <span id="year">🌸 Saidi Talatala 🌸 South Africa</span></p>
+    <p>&copy; <span id="year"></span>🌸 Saidi Talatala 🌸 South Africa</p>
     <div>Last Modified: <span id="lastModified"></span></div>
   </footer>
 </body>
