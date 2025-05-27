@@ -3,6 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta
+      name="description"
+      content="Saidi Talatala| BYU-Idaho WDD1|Temple homepage"
+    />
+    <meta name="author" content="Saidi Talatala" />
   <title>South Africa</title>
   <link rel="stylesheet" href="styles/place.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +37,20 @@
       </section>
 
       <section class="card">
-        <h2>Weather <span class="weather-icon">⛅</span></h2>
+       <h2>
+          Weather
+          <!-- <img 
+            class="weather-icon"
+            src="../images/weather-icon.png"
+            srcset="../images/weather-icon-small.png 1x, ../images/weather-icon-large.png 2x"
+            alt="Weather icon"
+          /> -->
+          <picture>
+          <source media="(min-width:650px)" srcset="images/weather-icon-large.png">
+          <source media="(min-width:465px)" srcset="images/weather-icon-small.png">
+          <img src="images/weather-icon.png"  alt="Weather icon" style="width:auto;">
+          </picture>
+        </h2>
         <p><span class="label">Temperature:</span> <span id="temp"></span></p>
         <p><span class="label">Conditions:</span> <span id="conditions"></span></p>
         <p><span class="label">Wind:</span> <span id="wind"></span></p>
