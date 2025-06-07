@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+      name="description"
+      content="Saidi Talatala| BYU-Idaho WDD1|Temple homepage">
+  <meta name="author" content="Saidi Talatala" >
+  <title>South Africa</title>
+  <link rel="stylesheet" href="styles/place.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Lato:wght@100;400;900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>South Africa</h1> 
+  </header>
+
+  <main>
+    <div class="content">
+      <section class="card">
+        <h2>Data</h2>
+        <p><span class="label">Area:</span> 1,214,470  sq km</p>
+        <p><span class="label">Population:</span> 63,210,000</p>
+        <p><span class="label">Capital:</span> Tshwane</p>
+        <p><span class="label">Languages:</span> English</p>
+        <p><span class="label">Currency:</span> Rand</p>
+        <p><span class="label">Time Zone:</span> GMT+2</p>
+        <p><span class="label">Calling Code:</span> +27</p>
+        <p><span class="label">Internet TLD:</span> .co.za</p>
+      </section>
+
+      <section class="card">
+        <h2>
+          Weather
+          <picture>
+            <source media="(min-width:650px)" srcset="images/weather-icon-large.png">
+            <source media="(min-width:465px)" srcset="images/weather-icon-small.png">
+            <img src="images/weather-icon.png" alt="Weather icon" class="weather-icon">
+          </picture>
+        </h2>
+        <p><span class="label">Temperature:</span> <span id="temp"></span></p>
+        <p><span class="label">Conditions:</span> <span id="conditions"></span></p>
+        <p><span class="label">Wind:</span> <span id="wind"></span></p>
+        <p><span class="label">Wind Chill:</span> <span id="windChill"></span></p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span>🌸 Saidi Talatala 🌸 South Africa</p>
+    <div>Last Modified: <span id="lastModified"></span></div>
+  </footer>
+</body>
+</html>
